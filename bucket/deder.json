@@ -1,0 +1,19 @@
+{
+    "version": "0.1.9",
+    "description": "Deder Build Tool",
+    "homepage": "https://github.com/sake92/deder",
+    "license": "Apache-2",
+    "url": "https://github.com/sake92/deder/releases/download/v0.1.9/deder-client-windows-x86_64.zip",
+    "hash": "sha256:8169266f6c71e6b9bd18bc8e1d4aa0aa6b7930be5010f41bde8bb8ae00e59d7d",
+    "bin": "deder.bat",
+    "checkver": {
+        "url": "https://github.com/sake92/deder/releases/latest",
+        "re": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/sake92/deder/releases/download/v$version/deder-client-windows-x86_64.zip",
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
